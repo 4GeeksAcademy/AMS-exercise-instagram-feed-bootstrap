@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamGram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light border p-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-instagram fs-3"></i>
+                <span class="ms-2 fw-bold">ScamGram</span>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">Crear Post</button>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle icon-left" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad y Datos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="modal fade" id="postModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" placeholder="Escribe un pie de foto..."></textarea>
+                    <button type="button" class="btn">
+                        <i class="bi bi-camera"></i>
+                    </button>
+                    <button type="button" class="btn">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-3">
+        <ul class="nav nav-pills justify-content-center" id="viewTabs">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#grid-view">
+                    <i class="bi bi-grid-fill"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#single-view">
+                    <i class="bi bi-square-fill"></i>
+                </button>
+            </li>
+        </ul>
+        
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="grid-view">
+                <div class="container">
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2023-02/lebron-infographic11%20%281%29.png?itok=K3F5U7tm">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://boardroom.tv/wp-content/uploads/2022/08/TH_Curry-Night-Night.jpg">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F08%2Fkobe-bryant-nike-kobe-5-protro-mamba-week-2009-2010-nba-season-history-tw.jpg?w=1080&cbr=1&q=90&fit=max">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://people.com/thmb/QAvJ6e7JPT1aCcBKVejQqkrj4KM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/pau-gasol-2-193ac91de6be47d3a0296a3393038bcc.jpg">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://www.momentogp.com/wp-content/uploads/2018/08/859201_fernando-alonso-wallpaper.jpg">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://images.daznservices.com/di/library/DAZN_News/8b/a4/fernando-alonso_1tpfg363bdqeq16jxcoaghywqh.jpeg?t=-1175542346">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://c.files.bbci.co.uk/10413/production/_100697566_hi045932006.jpg">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://ftw.usatoday.com/wp-content/uploads/sites/90/2013/12/scooby-doo-cartoon-wallpapers.jpg?w=660">
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex">
+                            <img class="img-fluid rounded" src="https://areajugones.sport.es/wp-content/uploads/2024/08/gta-vi-xbox-series-s-1560x880.jpg.webp">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="single-view">
+                <div class="container d-flex flex-column align-items-center overflow-auto vh-100">
+                    <div class="row g-3 w-75">
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>LeBron James breaks record after record.</span>
+                                    <span>03/02</span>
+                                </div>
+                                <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2023-02/lebron-infographic11%20%281%29.png?itok=K3F5U7tm" class="card-img-top">
+                                <div class="card-body">
+                                    <p class="fw-bold text-start">960k Likes</p>
+                                    <p class="card-text text-start">¿Alguien va a romper el récord de puntuación de Lebron? Son 41.261 puntos en su carrera.
+                                    Para superar a LeBron en los puntos de todos los tiempos:
+                                    Un jugador tendría que promediar 35 PPG, jugar 75 partidos cada temporada y jugar durante 15 años y medio.
+                                    Para pasar a LeBron en minutos de todos los tiempos:
+                                    Un jugador tendría que promediar 36 MPG, jugar 90 partidos cada temporada y jugar durante 20 años.
+                                    Esto no es solo "longevidad". Este trabajo duro, consistencia y pasión por el juego.
+                                    En resumen, NUNCA habrá otro LeBron. 🐐</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>Curry a Otro Nivel</span>
+                                    <span>31/01</span>
+                                </div>
+                                <img src="https://boardroom.tv/wp-content/uploads/2022/08/TH_Curry-Night-Night.jpg">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">350k Likes</p>
+                                    <p class="card-text text-start">¿Si Stephen Curry gana el 5to CAMPEONATO debería entrar en la conversación del GOAT con Michael Jordan y LeBron James?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>4º Aniversario de la Muerte de Kobe Bryant</span>
+                                    <span>28/01</span>
+                                </div>
+                                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F08%2Fkobe-bryant-nike-kobe-5-protro-mamba-week-2009-2010-nba-season-history-tw.jpg?w=1080&cbr=1&q=90&fit=max">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">450k Likes</p>
+                                    <p class="card-text text-start">Siempre te extrañaremos Legenda. Mamba Out🐍</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>@PauGasol</span>
+                                    <span>28/01</span>
+                                </div>
+                                <img src="https://people.com/thmb/QAvJ6e7JPT1aCcBKVejQqkrj4KM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/pau-gasol-2-193ac91de6be47d3a0296a3393038bcc.jpg">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">120k Likes</p>
+                                    <p class="card-text text-start">Eras más que un hermano para mi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>Un día como hoy en...</span>
+                                    <span>27/01</span>
+                                </div>
+                                <img src="https://www.momentogp.com/wp-content/uploads/2018/08/859201_fernando-alonso-wallpaper.jpg">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">300k Likes</p>
+                                    <p class="card-text text-start">22º Aniversario de la Primera Victoria de Fernando Alonso en la F1, ¿quién más la recuerda como si fuera ayer?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>F1 News</span>
+                                    <span>26/01</span>
+                                </div>
+                                <img src="https://images.daznservices.com/di/library/DAZN_News/8b/a4/fernando-alonso_1tpfg363bdqeq16jxcoaghywqh.jpeg?t=-1175542346">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">120k Likes</p>
+                                    <p class="card-text text-start">Alonso saldrá en 1ª posicón de la parrilla de salida(despues de 5 años)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>Datos Curiosos</span>
+                                    <span>20/01</span>
+                                </div>
+                                <img src="https://c.files.bbci.co.uk/10413/production/_100697566_hi045932006.jpg">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">1.2 Mill Likes</p>
+                                    <p class="card-text text-start">Cristiano Ronaldo voló literalmente en el Juventus Stadium para marcar un gol que ya es historia de la Copa de Europa. Según los cálculos realizados en el programa El Chiringuito, el delantero portugués del Real Madrid empalmó su chilena a 2,40 metros de altura para hacer el 0-2 en Turín.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>Scooby-Doo vuelve a estar de moda</span>
+                                    <span>12/01</span>
+                                </div>
+                                <img src="https://ftw.usatoday.com/wp-content/uploads/sites/90/2013/12/scooby-doo-cartoon-wallpapers.jpg?w=660">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">50k Likes</p>
+                                    <p class="card-text text-start">Netflix se prepara para darle un nuevo aire a uno de los personajes más queridos de la cultura pop: Scooby-Doo. La plataforma de streaming está finalizando las negociaciones para una nueva serie de acción real de Scooby-Doo, que promete traer a la famosa pandilla a la era del streaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span>Nuevas filtraciones de GTA VI</span>
+                                    <span>10/01</span>
+                                </div>
+                                <img src="https://areajugones.sport.es/wp-content/uploads/2024/08/gta-vi-xbox-series-s-1560x880.jpg.webp">
+                                    <div class="card-body">
+                                    <p class="fw-bold text-start">90k Likes</p>
+                                    <p class="card-text text-start">Una de las filtraciones más comentadas es sobre los protagonistas del juego. Según estas fuentes, GTA VI contará con dos personajes principales: Lucía y Jason, quienes se desenvolverán en una versión moderna de Vice City. Las imágenes filtradas muestran a Lucía en diversas situaciones, lo que ha alimentado las expectativas sobre su papel central en la historia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
